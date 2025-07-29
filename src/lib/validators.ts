@@ -35,7 +35,7 @@ export async function resolveENS(ens: string): Promise<string | null> {
   try {
     const { JsonRpcProvider } = await import("ethers")
     const provider = new JsonRpcProvider(
-      `https://mainnet.infura.io/v3/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
+      `https://eth-mainnet.g.alchemy.com/v2/${process.env.NEXT_PUBLIC_INFURA_PROJECT_ID}`
     )
     const address = await provider.resolveName(ens)
     return address
