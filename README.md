@@ -40,9 +40,9 @@ POAP_API_KEY=doJbd1DdLFG3q6lE1o22LOzfpFYmIkcN1n7ataBYtBgQ7RaA9XfZ1vpyXmjs8lWHPJ3
 POAP_CLIENT_SECRET=JybIHlU1xZQyjNO6Tzq4QdzTPFITfxAyKMb3_EFlIV_jEcD7F8R1-Ruf7SJ3T0wl
 POAP_CLIENT_ID=x9wYXDc3HY6HONCqHuHk1MSCxcxb8j3y
 
-# Redis (Upstash)
-REDIS_URL=your-upstash-redis-url
-REDIS_TOKEN=your-upstash-redis-token
+# Redis (Upstash REST API)
+UPSTASH_REDIS_REST_URL=your-upstash-rest-url
+UPSTASH_REDIS_REST_TOKEN=your-upstash-rest-token
 
 # Infura (for ENS resolution)
 NEXT_PUBLIC_INFURA_PROJECT_ID=your-infura-project-id
