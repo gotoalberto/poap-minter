@@ -7,6 +7,10 @@ import { getRecipientType } from "@/lib/validators"
 
 export async function POST(request: NextRequest) {
   try {
+    // Debug Redis config
+    console.log("Redis URL:", process.env.UPSTASH_REDIS_REST_URL)
+    console.log("Redis Token exists:", !!process.env.UPSTASH_REDIS_REST_TOKEN)
+    
     const session = await getServerSession(authOptions)
 
     if (!session || !session.user) {
