@@ -1,6 +1,6 @@
 "use client"
 
-import { useSession, signIn } from "next-auth/react"
+import { useSession, signIn, signOut } from "next-auth/react"
 import { useState } from "react"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -114,9 +114,15 @@ export default function Home() {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Welcome, {session.user.name}!
           </h1>
-          <p className="text-gray-600">
+          <p className="text-gray-600 mb-4">
             @{session.user.username}
           </p>
+          <button
+            onClick={() => signOut({ callbackUrl: '/' })}
+            className="text-sm text-gray-500 hover:text-gray-700 underline"
+          >
+            Sign out to use a different account
+          </button>
         </div>
 
         <div className="bg-white shadow rounded-lg p-6">
