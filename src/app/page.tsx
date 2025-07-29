@@ -133,7 +133,7 @@ export default function Home() {
                 id="recipient"
                 type="text"
                 placeholder="ENS name, Ethereum address, or email"
-                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 disabled={isMinting}
               />
               {errors.recipient && (
